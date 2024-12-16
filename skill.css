@@ -1,0 +1,222 @@
+:root {
+  --primary-color: #007BFF;
+  --secondary-color: #0056b3;
+  --background-color: #f4f4f4;
+  --text-color: white;
+  --font-family: Arial, sans-serif;
+  --font-size: 16px;
+  --line-height: 1.6;
+  --transition-duration: 0.2s;
+  --animation-duration: 0.5s;
+  --interactive-color: #66CCCC;
+  --animation-duration-fast: 0.2s;
+  --animation-duration-slow: 1s;
+  --parallax-speed: 0.5s;
+  --box-gap: 20px;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  line-height: var(--line-height);
+  font-size: var(--font-size);
+  transition: background-color var(--transition-duration) ease;
+  background-image: linear-gradient(to bottom, #f4f4f4, #fff);
+  background-attachment: fixed;
+}
+
+header {
+  background: var(--primary-color);
+  color: var(--text-color);
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-name{
+  margin-left: 80px;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin: 0 15px;
+  transition: transform var(--transition-duration) ease;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+  background-color: var(--interactive-color);
+  border-radius: 5px;
+}
+
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color var(--transition-duration) ease;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+main {
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--box-gap);
+}
+
+.box {
+  background: white;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  transition: transform var(--transition-duration) ease;
+}
+
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background var(--transition-duration) ease;
+}
+
+button:hover {
+  background: var(--secondary-color);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: var(--primary-color);
+  color: var(--text-color);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  clear: both;
+}
+
+.parallax {
+  background-image: url('https://picsum.photos/2000/1000');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.parallax h1 {
+  font-size: 48px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#profile{
+  background-color: rgb(174, 174, 239);
+  text-align: center;
+  line-height: 53px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#skillsOffered{
+  margin-right: 25px;
+}
+#match{
+  text-align: center;
+  background-color: rgb(197, 197, 243);
+  line-height: 53px;
+  margin-bottom: 10px;
+}
+#schedule{
+  text-align: center;
+  background-color: rgb(206, 206, 240);
+  line-height: 53px;
+  margin-bottom: 10px;
+}
+#community{
+  text-align: center;
+  background-color: rgb(206, 206, 240);
+  line-height: 53px;
+  margin-bottom: 10px;
+}
+#about{
+  text-align: center;
+  background-color: rgb(218, 218, 243);
+  /* line-height: 53px; */
+  margin-bottom: 10px;
+  
+}
+#content{
+  width: 80%;
+  margin-left: 10%;
+}
+#name{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+#skillsOffered{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+#skillsWanted{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+#sessionDetails{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+#sessionTime{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+#postContent{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
